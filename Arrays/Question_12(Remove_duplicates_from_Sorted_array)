@@ -1,0 +1,16 @@
+  int remove_duplicate(int arr[],int n){
+        // code here
+        int i,j;
+        for(i=0,j=1;j<n;){
+            if(arr[i]==arr[j]){
+                j++;
+            }
+            else{
+                i++;
+                arr[i]=arr[j];
+                j++;
+                
+            }
+        }
+        return i+1;
+    }
